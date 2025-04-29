@@ -40,7 +40,7 @@ CreateThread(function()
                     TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[item.name], "remove")
                     
                     if notify and notify.atsinmi then
-                        TriggerClientEvent('QBCore:Notify', src, notify.mesaj or kitName, "success")
+                        TriggerClientEvent('QBCore:Notify', src, notify.mesaj, "success")
                     end
                 end
             end
